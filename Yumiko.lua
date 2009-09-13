@@ -1,5 +1,5 @@
 local addon = CreateFrame('Frame')
-addon:RegisterEvent('UNIT_TARGET')
+addon:RegisterEvent('PLAYER_TARGET_CHANGED')
 addon:SetScript('OnEvent', function()
 	for index = 1, GetNumTrackingTypes() do
 		local name, texture = GetTrackingInfo(index)
